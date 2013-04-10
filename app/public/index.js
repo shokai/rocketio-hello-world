@@ -1,15 +1,16 @@
 io = new RocketIO().connect();
 
 
-// push to server
+// push "hello" to server
 $(function(){
-  $("#btn_hello").click(function(){
-    io.push("hello", "hello world");
+  $("#btn").click(function(){
+    var message = $("#text").val();
+    io.push("hello", message);
   });
 });
 
 
-// receive from server
-io.on("hello", function(message){
+// receive "echo" from server
+io.on("echo", function(message){
   alert(message);
 });

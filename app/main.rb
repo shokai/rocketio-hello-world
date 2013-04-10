@@ -1,13 +1,12 @@
 io = Sinatra::RocketIO
 
-## receive from client
+## receive "hello" from client
 io.on :hello do |message, client|
-  puts "> receive #{message} from #{client}"
+  puts "> receive '#{message}' from #{client.session}"
 
-  ## push to client
-  io.push :hello, message
+  ## push "echo" to client
+  io.push :echo, message
 end
-
 
 get '/' do
   erb :index
