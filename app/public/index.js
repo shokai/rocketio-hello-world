@@ -1,6 +1,5 @@
 io = new RocketIO().connect();
 
-
 // push "hello" to server
 $(function(){
   $("#btn").click(function(){
@@ -9,8 +8,8 @@ $(function(){
   });
 });
 
-
 // receive "echo" from server
 io.on("echo", function(message){
-  alert(message);
+  // alert(message);
+  $("#log").prepend( $("<p>").text(message) );
 });
