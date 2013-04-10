@@ -17,13 +17,13 @@ Install Dependencies
 Run
 ---
 
-    % rackup config.ru
+    % rackup config.ru -p 5000
 
 ```
 >> Thin web server (v1.5.1 codename Straight Razor)
 >> Maximum connections set to 1024
->> Listening on 0.0.0.0:9292, CTRL+C to stop
+>> Listening on 0.0.0.0:5000, CTRL+C to stop
 Sinatra::WebSocketIO.start port:8080
 ```
 
-=> http://localhost:9292
+=> http://localhost:5000
