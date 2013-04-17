@@ -27,3 +27,8 @@ Sinatra::WebSocketIO.start port:8080
 ```
 
 => http://localhost:5000
+
+
+set websocket port
+
+    % WS_PORT=5001 rackup config.ru -p 5000
