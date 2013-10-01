@@ -4,7 +4,7 @@ RocketIO Hello World
 very simple [Sinatra RocketIO](https://github.com/shokai/sinatra-rocketio) application.
 
 * https://github.com/shokai/rocketio-hello-world
-* [demo](http://dev.shokai.org:4100)
+* [demo](http://hello.shokai.org)
 
 Install Dependencies
 --------------------
